@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main
+      class="bg-gray-600 flex flex-col items-center justify-center min-h-screen"
+    >
+      <div
+        id="container"
+        class="border-4 border-white w-2/3 h-[70vh] bg-white rounded-3xl drop-shadow-2xl flex flex-col items-center"
+      >
+        <div id="welcome" class="w-full px-16 py-8 flex justify-between">
+          <h4 id="Date" class="text-gray-800 text-xl"></h4>
+          <h1 id="Greet" class="text-gray-800 text-4xl font-extrabold"></h1>
+          <h4 id="Time" class="text-gray-800 text-xl"></h4>
+        </div>
+        <div class="mt-8 mb-5 h-12 flex w-1/2 rounded-3xl bg-slate-200">
+          <input
+            id="input"
+            placeholder="Enter your city"
+            type="text"
+            class="w-4/5 rounded-3xl text-2xl bg-slate-200 focus:outline-none pl-8"
+          />
+          <button id="button" class="bg-gray-600 rounded-3xl w-1/5 text-white text-base">
+            <i class="ri-search-eye-line"></i>
+            Search
+          </button>
+        </div>
+
+        <div
+          id="tempData"
+          class="w-full flex gap-20 items-center justify-center p-0 mt-10"
+        >
+          <div id="feelType">
+            <h4 id="feel">feels like 27</h4>
+            <h4 id="type">Cloudy</h4>
+          </div>
+          <h1 id="temp" class="text-gray-600 text-8xl font-extrabold">21&degc</h1>
+          <div id="windHum">
+            <h4><i class="ri-windy-line"></i> <span id="wind">6.1 mps</span></h4>
+            <h4 ><i class="ri-drop-fill"></i> <span id="humidity">90%</span></h4>
+          </div>
+        </div>
+
+        <div>
+            <h1 id="city" class="text-gray-600 text-4xl font-bold mt-16">Kolkata</h1>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
